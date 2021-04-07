@@ -59,6 +59,17 @@ public class TypeEntier {
 		unLong= 52020122495282L;
 		
 		System.out.printf("unLong = %s\n", unLong);
+		
+		unInt = unByte;
+		System.out.printf("unInt = %s\n", unInt);
+		unByte = (byte) unInt;
+		
+		System.out.printf("unByte = %s\n", unByte);
+		unLong = unByte; 
+		System.out.printf("unLong = %s\n", unLong);
+		unByte = (byte) unLong;
+		
+		System.out.printf("unByte = %s\n", unByte);
 
 	}
 
