@@ -8,6 +8,7 @@
   	<module>01_Introduction</module>
   	<module>02_Variables</module>
   	<module>03_Operateurs</module>
+  	<module>04_Type_Complexe</module>
   </modules>
   <properties>
        <maven.compiler.source>15</maven.compiler.source>
