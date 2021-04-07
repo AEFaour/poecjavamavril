@@ -57,3 +57,4 @@ public class Declaration {
 // printf --> permet de faire un formatage affichage
 // Toute variable déclarée dans une méthode doit être initialisée
 // Depuis java 10, il est possible de faire l'inférence de type
+// Le nom d'une variable ne peut pas commencer par un chiffre

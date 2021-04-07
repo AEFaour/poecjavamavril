@@ -17,7 +17,7 @@ public class TypeFloattant {
 		// Le type double est un nombre à virgules signé, codé sur 8 octets soit 64 bits la valeur
 		// par defaut d'un int est 0.0
 		
-		double unDouble = 3.2; 
+		double unDouble = 3.2f; // conversion implicite
 		
 		System.out.printf("unDouble = %s\n", unDouble);
 		System.out.printf("MinDouble = %s\n", Double.MIN_VALUE);
@@ -29,9 +29,13 @@ public class TypeFloattant {
 		
 		unFloat = (float) unDouble;
 		System.out.printf("unFloat = %s\n", unFloat);
-
+		System.out.println(unDouble / 0);
 	}
 
 }
 
 // byte --> short --> int --> long --> float --> double
+
+// Double (+-/*) int ==> double
+// byte (+-/*) int ==> int
+

@@ -32,8 +32,8 @@ public class TypeEntier {
 
 		System.out.println("\n========Type int=======\n");
 		/**
-		 * Le type int est un entier signé, codé sur 3 octetS soit 32 bits La valeur
-		 * par defaut d'un SHORT est 0;
+		 * Le type int est un entier signé, codé sur 3 octetS soit 32 bits La valeur par
+		 * defaut d'un SHORT est 0;
 		 * 
 		 */
 
@@ -42,7 +42,7 @@ public class TypeEntier {
 		System.out.printf("unInt = %s\n", unInt);
 		System.out.printf("minInt = %s\n", Integer.MIN_VALUE);
 		System.out.printf("maxInt = %s\n", Integer.MAX_VALUE);
-		
+
 		System.out.println("\n========Type long=======\n");
 		/**
 		 * Le type long est un entier signé, codé sur 4 octetS soit 64 bits La valeur
@@ -50,26 +50,39 @@ public class TypeEntier {
 		 * 
 		 */
 
-		long unLong= 520201222;
+		long unLong = 520201222;
 
 		System.out.printf("unLong = %s\n", unLong);
 		System.out.printf("minLong = %s\n", Long.MIN_VALUE);
 		System.out.printf("maxLong = %s\n", Long.MAX_VALUE);
-		
-		unLong= 52020122495282L;
-		
+
+		unLong = 52020122495282L;
+
 		System.out.printf("unLong = %s\n", unLong);
-		
+
 		unInt = unByte;
 		System.out.printf("unInt = %s\n", unInt);
 		unByte = (byte) unInt;
-		
+
 		System.out.printf("unByte = %s\n", unByte);
-		unLong = unByte; 
+		unLong = unByte;
 		System.out.printf("unLong = %s\n", unLong);
 		unByte = (byte) unLong;
-		
+
 		System.out.printf("unByte = %s\n", unByte);
+
+		System.out.println(unLong / 0.0);
+		
+		System.out.println(0.0 / 0);
+		
+		System.out.println( 8 / 3);
+		System.out.println( 8. / 3);
+		System.out.println( 8 / 3.);
+		System.out.println((float)( 8 / 3));
+		System.out.println(8f / 3);
+		System.out.println((float) 8 / 3);
+		System.out.println( 8d / 3);
+		System.out.println( (double) 8 / 3);
 
 	}
 
