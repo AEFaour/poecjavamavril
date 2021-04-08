@@ -14,9 +14,9 @@ public class Switch {
 
 			int numero = saisie.nextInt();
 
-			String jourDeLaSemaine;
+			//String jourDeLaSemaine;
 
-			switch (numero) {
+			/*switch (numero) {
 			case 1:
 				jourDeLaSemaine = "Lundi";
 				break;
@@ -41,8 +41,19 @@ public class Switch {
 			default:
 				jourDeLaSemaine = " Numéro du jour inconnu de système";
 
-			}
+			}*/
+			// Depuis Java 14 on peut écrire le switch comme suit
 
+			String jourDeLaSemaine= switch(numero) {
+			case 1 -> "Lundi";
+			case 2 -> "Lundi";
+			case 3 -> "Lundi";
+			case 4 -> "Lundi";
+			case 5 -> "Lundi";
+			case 6 -> "Lundi";
+			case 7 -> "Lundi";
+			default -> " Numéro du jour inconnu de système";
+			};
 			System.out.println(numero + " --> " + jourDeLaSemaine);
 
 		} else {

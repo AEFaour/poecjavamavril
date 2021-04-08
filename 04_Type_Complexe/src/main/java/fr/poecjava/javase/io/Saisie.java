@@ -10,7 +10,7 @@ public class Saisie {
 		String prenom = saisie.nextLine();
 		System.out.println("Votre prenom est " + prenom );
 //		System.out.println("Entre le nb de bouteilles : ");
-//		int nbBouteilles = saisie.nextLine();
+//		int nbBouteilles = saisie.nextInt();
 //		System.out.println("nb de bouteilles " + nbBouteilles );
 		
 		System.out.print("Entrez votre prenom : ");

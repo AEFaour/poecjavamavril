@@ -1,6 +1,7 @@
 fr\poecjava\javase\type\primitifs\TypeEntier.class
+fr\poecjava\javase\type\primitifs\TypeBoolean.class
+fr\poecjava\javase\type\primitifs\TypeFloattant.class
+fr\poecjava\javase\type\string\chaine.class
 fr\poecjava\javase\type\primitifs\Conversion.class
 fr\poecjava\javase\type\primitifs\TypeChar.class
 fr\poecjava\javase\variable\Declaration.class
-fr\poecjava\javase\type\primitifs\TypeBoolean.class
-fr\poecjava\javase\type\primitifs\TypeFloattant.class
