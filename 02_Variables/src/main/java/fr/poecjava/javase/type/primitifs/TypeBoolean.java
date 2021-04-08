@@ -9,8 +9,8 @@ public class TypeBoolean {
 		
 		boolean faux = false;
 		
-		System.out.printf("vrai = %s", vrai);
-		System.out.printf("faux = %s", faux);
+		System.out.printf("vrai = %s\n", vrai);
+		System.out.printf("faux = %s\n", faux);
 
 	}
 

@@ -27,6 +27,11 @@ public class Declaration {
 		//System.out.printf("b = %s\n", b);
 		//System.out.printf("c = %s\n", c);
 		
+		var largeur = 22.5; 
+		
+		System.out.printf("largeur = %s\n", largeur);
+		
+		
 		var prenom = "Anas";
 		
 		System.out.printf("prenom = %s\n", prenom);

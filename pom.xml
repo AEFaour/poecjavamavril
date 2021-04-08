@@ -9,10 +9,12 @@
   	<module>02_Variables</module>
   	<module>03_Operateurs</module>
   	<module>04_Type_Complexe</module>
+  	<module>03_Input_Output</module>
+  	<module>05_Structures</module>
   </modules>
   <properties>
-       <maven.compiler.source>15</maven.compiler.source>
-       <maven.compiler.target>15</maven.compiler.target>
+       <maven.compiler.source>11</maven.compiler.source>
+       <maven.compiler.target>11</maven.compiler.target>
        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
