@@ -1,9 +1,10 @@
 package fr.poecjava.javase.iteratives;
 
+
 public class BoucleWhile {
 
 	public static void main(String[] args) {
-		int compteur = 1, val = 1;
+		int compteur = 1, val = 3;
 		
 		while(val <11 ) {
 		while (compteur < 11) {

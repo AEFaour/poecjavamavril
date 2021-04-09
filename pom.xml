@@ -11,6 +11,8 @@
   	<module>04_Type_Complexe</module>
   	<module>03_Input_Output</module>
   	<module>05_Structures</module>
+  	<module>Exercices</module>
+  	<module>06_Classe</module>
   </modules>
   <properties>
        <maven.compiler.source>15</maven.compiler.source>
