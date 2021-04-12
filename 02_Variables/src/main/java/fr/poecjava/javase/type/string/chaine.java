@@ -16,6 +16,8 @@ public class chaine {
 		System.out.println(salut.substring(2));
 		System.out.println(salut.substring(2, 4));
 		System.out.println(salut.startsWith("B"));
+		
+		String nom = new String();
 
 	}
 

@@ -26,8 +26,12 @@ public class Methods {
 		System.out.println(isMultiple(4, 2));
 		System.out.println(isEven(9));
 		System.out.println(isPremier(7));
-		int[] myTab = { 25, 12, 3 };
-		System.out.println(triTable(myTab));
+		int[] myTabTriABulle = { 25, 12, 3, 17, 99, 75 };
+		System.out.println("Tri à bulle " + triABulleTable(myTabTriABulle));
+		int[] myTabTriSelection = { 25, 12, 3, 17, 99, 75 };
+		System.out.println("Tri Sélection " + triSelectionTable(myTabTriSelection));
+		int[] myTabTriInsertion = { 25, 12, 3, 17, 99, 75 };
+		System.out.println("Tri Insertion " + triInsertionTable(myTabTriInsertion));
 
 	}
 
@@ -113,26 +117,51 @@ public class Methods {
 		return test;
 	}
 
-	static String triTable(int[] tab) {
-		String res;
-
-		int tmp;
-
-		for (int i = tab.length -1; i >1; i--) {
-			for (int j = 0; j < i; j++) {
-
-				if (tab[j] > tab[j+1]) {
-					tmp = tab[j + 1];
-					tab[j + 1] = tab[j];
-					tab[j] = tmp;
-
-				}
-
-			}
-
-		}
-		return res = Arrays.toString(tab);
-
+	static void change(int[] tab, int x, int y) {
+		int val = tab[x];
+		tab[x] = tab[y];
+		tab[y] = val;
 	}
 
+	static String triABulleTable(int[] tab) {
+		String res;
+		for (int i = 0; i < tab.length; i++) {
+			for (int j = 1; j < tab.length - i; j++) {
+				if (tab[j] < tab[j - 1]) {
+					change(tab, j, j - 1);
+				}
+			}
+		}
+		return res = Arrays.toString(tab);
+	}
+
+	static String triSelectionTable(int[] tab) {
+		String res;
+		int indexMini = 0;
+		for (int i = 0; i < tab.length; i++) {
+			indexMini = i;
+			for (int j = i + 1; j < tab.length; j++) {
+				if (tab[j] < tab[indexMini]) {
+					indexMini = j;
+				}
+			}
+			change(tab, i, indexMini);
+		}
+		return res = Arrays.toString(tab);
+	}
+
+	static String triInsertionTable(int[] tab) {
+		String res;
+
+		for (int i = 1; i < tab.length; i++) {
+			int key = tab[i];
+			int j = i - 1;
+			while (j >= 0 && tab[j] > key) {
+				tab[j + 1] = tab[j];
+				j--;
+			}
+			tab[j+1] = key;
+		}
+		return res = Arrays.toString(tab);
+	}
 }

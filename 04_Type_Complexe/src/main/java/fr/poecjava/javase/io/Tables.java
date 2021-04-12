@@ -1,4 +1,4 @@
-package fr.poecjava.javase.tableaux;
+package fr.poecjava.javase.io;
 
 import java.util.Arrays;
 

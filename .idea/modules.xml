@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_Introduction/01_Introduction.iml" filepath="$PROJECT_DIR$/01_Introduction/01_Introduction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_Variables/02_Variables.iml" filepath="$PROJECT_DIR$/02_Variables/02_Variables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Input_Output/03_Input_Output.iml" filepath="$PROJECT_DIR$/03_Input_Output/03_Input_Output.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Operateurs/03_Operateurs.iml" filepath="$PROJECT_DIR$/03_Operateurs/03_Operateurs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Type_Complexe/04_Type_Complexe.iml" filepath="$PROJECT_DIR$/04_Type_Complexe/04_Type_Complexe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_Structures/05_Structures.iml" filepath="$PROJECT_DIR$/05_Structures/05_Structures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Classe/06_Classe.iml" filepath="$PROJECT_DIR$/06_Classe/06_Classe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercices/Exercices.iml" filepath="$PROJECT_DIR$/Exercices/Exercices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-se.iml" filepath="$PROJECT_DIR$/java-se.iml" />
+    </modules>
+  </component>
+</project>
