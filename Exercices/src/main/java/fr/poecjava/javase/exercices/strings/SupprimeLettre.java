@@ -1,9 +1,15 @@
 package fr.poecjava.javase.exercices.strings;
 
+import java.util.Scanner;
+
 public class SupprimeLettre {
 
 	public static void main(String[] args) {
-		String str = "Bonjour"; 
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println(" Veuillez entrer une chaîne, svp : ");
+
+		String str = sc.next();
 		 
 		char[] strCh = str.toCharArray();
 		

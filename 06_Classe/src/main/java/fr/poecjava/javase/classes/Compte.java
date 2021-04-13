@@ -5,25 +5,25 @@ public class Compte {
     //les attributs ou champs
     //Ils doivent être de préference private
     //on parle d'encapsulation
-    private double solde;
+    private int solde;
     private String numero;
 
     //Attribut de classe
-    public static int nbCompte;
+    private static int nbCompte;
 
     public static int getNbCompte() {
         return nbCompte;
     }
 
-    public Compte(String n) {
-        numero = n;
+    public Compte(String numero) {
+        this.numero = numero;
         solde = 80;
         nbCompte++;
     }
 
-    public Compte(String n, double depot) {
-        numero = n;
-        solde = 80 + depot;
+    public Compte(String numero, int solde) {
+        this.numero = numero;
+        this.solde = 80 + solde;
         nbCompte++;
     }
 
@@ -33,42 +33,52 @@ public class Compte {
      *
      * @return
      */
-    public double getSolde() {
+    public int getSolde() {
         return solde;
     }
 
     /**
      * Acces en ecriture de l'attribut solde
      *
-     * @param montant
+     * @param solde
      */
 
-    public void setSolde(double montant) {
-        solde = montant;
+    public void setSolde(int solde) {
+        this.solde = solde;
     }
 
     public String getNumero() {
         return numero;
     }
 
-    public void crediter(double montant) {
-        if (montant > 0) {
-            solde += montant;
+    public void deposer(int s) {
+        if (s > 0) {
+            this.solde += s;
         }
 
     }
 
-    public boolean debiter(double montant) {
+    public void retirer(int s) {
+        if (s > 0 && this.solde > s) {
+            this.solde -= s;
+        }
+    }
+
+
+    public boolean peutRetirer(int s) {
         boolean resultat = false;
-        if (montant > 0 && solde > montant) {
-            solde -= montant;
+        if (s > 0 && this.solde > s) {
+            this.solde -= s;
             resultat = true;
         }
         return resultat;
     }
 
-    public String description() {
-        return "[N : " + numero + ", Solde: " + solde + "]";
+    public int solde(){
+        return this.solde;
+    }
+    public String infos() {
+        return "Compte numéro : " + numero + ", Solde: " + solde + " €";
     }
 
 
