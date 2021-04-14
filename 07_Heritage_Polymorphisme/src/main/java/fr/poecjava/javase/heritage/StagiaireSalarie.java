@@ -16,7 +16,10 @@ public class StagiaireSalarie extends Stagiaire{
 		this.salaire = salaire;
 	}
 
-	
-	
+	@Override
+	public String description() {
+		String texte = super.description() + String.format("et son salaire est  %s € ", salaire); 
+		return texte; 
+	}
 
 }

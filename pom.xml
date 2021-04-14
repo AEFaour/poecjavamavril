@@ -14,6 +14,8 @@
   	<module>Exercices</module>
   	<module>06_Classe</module>
   	<module>07_Heritage_Polymorphisme</module>
+
+  	<module>08_Collections</module>
   </modules>
   <properties>
        <maven.compiler.source>15</maven.compiler.source>

@@ -24,5 +24,16 @@ public class Stagiaire extends Personne {
 	public void setCours(String cours) {
 		this.cours = cours;
 	}
+	
+	/*
+	 * Redefinition de méthode
+	 * La méthode description est polymorphe
+	 */
+	@Override
+	public String description() {
+		String texte = super.description() + String.format("suit le cours %s ", cours); 
+		return texte; 
+	}
+	
 
 }

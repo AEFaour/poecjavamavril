@@ -1,0 +1,1 @@
+package fr.poecjava.javase.heritage.abstracts;
