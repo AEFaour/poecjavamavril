@@ -16,7 +16,8 @@ public class Personne {
        this.ddn = ddn;
     }
 
-    public String getPrenom() {
+
+	public String getPrenom() {
         return prenom;
     }
 

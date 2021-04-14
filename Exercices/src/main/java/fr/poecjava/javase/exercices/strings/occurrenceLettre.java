@@ -1,22 +1,36 @@
 package fr.poecjava.javase.exercices.strings;
 
+import java.util.Scanner;
+
 public class occurrenceLettre {
 
 	public static void main(String[] args) {
-		String str = "Bonjour";
+		Scanner sc = new Scanner(System.in);
 
-		/*char[] charStr = str.toCharArray();
-		int count = 0;
-		int j = 0;
-		for (j = 0; j < charStr.length; j++) {
-		for (int i = 0; i < str.length(); i++) {
-			
-				if (str.charAt(i) == charStr[j]) {
+		System.out.println(" Veuillez entrer une chaîne, svp : ");
+
+		StringBuilder sb = new StringBuilder();
+
+		sb.append(sc.nextLine());
+		
+		
+		int count = 0; 
+		
+		/*for (int i = 0; i < sb.length(); i++) {
+			for (int j = 0; j < sb.length(); j++) {
+				if (sb.charAt(i) == sb.charAt(j)) {
 					count++;
 				}
 			}
-		}
-		System.out.println(charStr[j]+ ": " + count + " fois");*/
+			if (count > 0) {
+				System.out.println("La lettre " + sb.charAt(i) + " est présent " + count + " fois");
+			} else {
+
+				System.out.println("La lettre " + sb.charAt(i) + " est absent");
+			}
+			}*/
+			
+		sc.close();
 	}
 
 }

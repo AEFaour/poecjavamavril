@@ -14,7 +14,20 @@ public class StringEtoiles {
         sb.append(sc.nextLine());
 
         System.out.println(sb);
+        
+        String sbEtoiles ="";
+        
+        for (int i = 0; i < sb.length(); i++) {
+        	
+        	sbEtoiles += "*";
+		}
+        
+        sb.replace(0, sb.length(), sbEtoiles);
+        
+        
+        System.out.println(sb);
 
+       sc.close();
 
 
       /*  for(int i = 0; i < sb.length() -1; i++){

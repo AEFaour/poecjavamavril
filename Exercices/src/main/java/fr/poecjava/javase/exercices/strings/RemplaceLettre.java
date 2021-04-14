@@ -5,7 +5,21 @@ import java.util.Scanner;
 public class RemplaceLettre {
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
+
+		System.out.println(" Veuillez entrer une chaîne, svp : ");
+		
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append(sc.nextLine());
+		
+		System.out.println(sb.toString().replace('b', 's').replace('B', 'S'));
+		
+		sc.close();
+		
+		/*
+		 * Scanner sc = new Scanner(System.in);
 
 		System.out.println(" Veuillez entrer une chaîne, svp : ");
 
@@ -26,6 +40,8 @@ public class RemplaceLettre {
 		str = new String(strCh);
 		
 		System.out.println("\n" + str);
+		
+		*/
 
 	}
 

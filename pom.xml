@@ -13,6 +13,7 @@
   	<module>05_Structures</module>
   	<module>Exercices</module>
   	<module>06_Classe</module>
+  	<module>07_Heritage_Polymorphisme</module>
   </modules>
   <properties>
        <maven.compiler.source>15</maven.compiler.source>
