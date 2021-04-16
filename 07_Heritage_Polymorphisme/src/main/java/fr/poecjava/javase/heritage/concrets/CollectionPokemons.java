@@ -3,7 +3,6 @@ package fr.poecjava.javase.heritage.concrets;
 import java.util.ArrayList;
 
 import fr.poecjava.javase.heritage.abstracts.Pokemon;
-import fr.poecjava.javase.heritage.concrets.PokemonSportif;
 
 public class CollectionPokemons {
 
@@ -34,7 +33,11 @@ public class CollectionPokemons {
 		double moyen = 0.0;
 
 		for (Pokemon pokemon : this.getPokemons()) {
+			if(this.getPokemons().size() > 0) {
 			moyen += pokemon.seDeplacer() / this.getPokemons().size();
+			}else {
+				moyen= 0.0;
+			}
 
 		}
 
@@ -44,23 +47,29 @@ public class CollectionPokemons {
 	public double moyenVitessePS() {
 
 		double moyen = 0.0;
+		
+		int nbSportif = 0;
 
-		ArrayList<PokemonSportif> pokemensp = new ArrayList<PokemonSportif>();
+		for (Pokemon pokemon : this.getPokemons()) {
+			if (pokemon instanceof PokemonSportif ) {
+				nbSportif++;
+				if(nbSportif > 0) {
+				moyen += pokemon.seDeplacer() / nbSportif;
+				}else {
+					moyen= 0.0;
+				}
 
-			for (PokemonSportif ps : pokemensp) {
-				
-				// this.pokemons.add(pokemon);
-				//this.pokemons.add(ps);
-				moyen += ps.seDeplacer() /  pokemensp.size();
 			}
+			
+		}
 
 		return moyen;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("Les pokémons %s sont %s et la vitesse moyenne est %s", pokemons, getPokemons(),
-				moyenVitesse());
+		return String.format("Les pokémons %s sont %s et la vitesse moyenne est %s", this.getClass().getSimpleName(),
+				getPokemons(), moyenVitesse());
 	}
 
 }

@@ -54,6 +54,7 @@ public class TestPokemon {
 		 System.out.println(cp.getPokemons());
 		 System.out.println(cp.moyenVitesse());
 		 System.out.println(cp.toString());
+		 System.out.println(cp.toString());
 		 System.out.println(cp.moyenVitessePS());
 		 
 
