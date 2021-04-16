@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/04_Type_Complexe/04_Type_Complexe.iml" filepath="$PROJECT_DIR$/04_Type_Complexe/04_Type_Complexe.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_Structures/05_Structures.iml" filepath="$PROJECT_DIR$/05_Structures/05_Structures.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_Classe/06_Classe.iml" filepath="$PROJECT_DIR$/06_Classe/06_Classe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_Heritage_Polymorphisme/07_Heritage_Polymorphisme.iml" filepath="$PROJECT_DIR$/07_Heritage_Polymorphisme/07_Heritage_Polymorphisme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_Collections/08_Collections.iml" filepath="$PROJECT_DIR$/08_Collections/08_Collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercices/Exercices.iml" filepath="$PROJECT_DIR$/Exercices/Exercices.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-se.iml" filepath="$PROJECT_DIR$/java-se.iml" />
     </modules>

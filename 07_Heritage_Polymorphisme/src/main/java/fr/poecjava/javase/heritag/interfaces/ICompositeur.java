@@ -13,12 +13,12 @@ public interface ICompositeur {
 	}
 	
 	
-	default void auteMethodeParDefaut() {
+	default void autreMethodeParDefaut() {
 		//System.out.println("Je suis une autre méthode par defaut");
 	}
 	
 	
-	static void auteMethode() {
+	static void autreMethode() {
 		System.out.println("Je suis une  méthode static");
 	}
 }

@@ -10,7 +10,9 @@
         <module name="04_Type_Complexe" />
         <module name="02_Variables" />
         <module name="Exercices" />
+        <module name="07_Heritage_Polymorphisme" />
         <module name="05_Structures" />
+        <module name="08_Collections" />
         <module name="03_Operateurs" />
         <module name="01_Introduction" />
         <module name="06_Classe" />
@@ -24,6 +26,8 @@
       <module name="04_Type_Complexe" target="15" />
       <module name="05_Structures" target="15" />
       <module name="06_Classe" target="15" />
+      <module name="07_Heritage_Polymorphisme" target="15" />
+      <module name="08_Collections" target="15" />
       <module name="Exercices" target="15" />
       <module name="java-se" target="15" />
     </bytecodeTargetLevel>
